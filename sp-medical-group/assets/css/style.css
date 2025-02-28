@@ -1,46 +1,111 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-h1 {
+/* Fonte padrão */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo da Navbar */
+.navbar {
+    background-color: #003366;
+    padding: 15px 0;
     text-align: center;
-    margin-top: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-form {
-    width: 300px;
+.navbar .container {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
+    padding: 0 15px;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+}
+
+/* Estilo do formulário centralizado */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 30px auto; /* Espaçamento para a navbar */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-cadastro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #003366;
+    text-align: center;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 input[type="date"],
-input[type="submit"] {
+select,
+textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-input[type="submit"] {
-    background-color: #28a745;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+/* Botão */
+.submit-btn {
+    background-color: #003366;
     color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #218838;
+.submit-btn:hover {
+    background-color: #00509e;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #003366;
+    color: white;
+    margin-top: 30px;
 }
